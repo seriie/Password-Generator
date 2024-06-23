@@ -1,0 +1,157 @@
+body {
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #080e29;
+}
+
+.container {
+    border: 1px solid #1f6175;
+    box-shadow: 0 0 5px 1px #1f6175;
+    background-color: #13253f;
+    border-radius: 20px;
+    max-width: 500px;
+    height: auto;
+    padding: 0 20px;
+}
+
+.container .passwordGenerator {
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.container .zee {
+    color: #cfcfcf;
+    text-align: center;
+}
+
+.container .password-output {
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 1px solid #6f18c0;
+    box-shadow: 0 0 5px 1px #6f18c0;
+    background-color: #6524a1;
+    text-shadow: 0 0 5px #278aa8;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.container .form-group.form-group.length label {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0 0 5px #1f6175;
+}
+
+.container .form-group.length input{
+    border-radius: 17px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+    width: auto;
+    background-color: #6524a1;
+    box-shadow: 0 0 8px 3px #6524a1;
+    max-width: auto;
+    border: 1px solid #6f18c0;
+    color: #fff;
+    text-shadow: 0 0 5px #cd98ff;
+}
+
+.container .form-group {
+    color: #f0f0f0;
+    margin: 3px 0;
+}
+
+.container .form-group.char label {
+    cursor: pointer;
+    flex: 1;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0 0 5px #1f6175;
+    position: relative;
+}
+
+.container .form-group.char input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    appearance: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.container .form-group.char input[type="checkbox"]::before {
+    content: ''; /* Tidak ada konten di awal */
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #6f18c0;
+    box-shadow: 0 0 8px 3px #6f18c0;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.container .form-group.char input[type="checkbox"]:checked::before {
+    content: '\2713'; /* Simbol Unicode untuk centang (✓) */
+    background-color: #6f18c0;
+    color: #ffffff; /* Warna simbol ketika dicentang */
+    font-size: 20px; /* Ukuran simbol */
+    line-height: 30px; /* Mengatur simbol berada di tengah secara vertikal */
+    text-align: center; /* Mengatur simbol berada di tengah secara horizontal */
+}
+
+.container #generateBtn {
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    color: #e5caff;
+    border: 1px solid #6f18c0;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 8px 3px #6f18c0;
+    background-color: #5d14a1;
+    transition: .4s ease;
+}
+
+.container #generateBtn:hover {
+    background-color: #6f18c0;
+    color: white;
+}
+
+.container #generateBtn:active {
+    background-color: #5e14a3;
+}
+
+.section {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+}
+
+.section span {
+    color: rgba(255, 255, 255, 0.459);
+    font-weight: bold;
+}
+
+.section .zee {
+    color: cyan;
+    text-shadow: 0 0 3px cyan;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}

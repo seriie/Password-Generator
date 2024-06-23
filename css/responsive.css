@@ -1,0 +1,59 @@
+@media only screen and (max-width: 530px) {
+    .container .form-group label {
+        font-size: 20px !important;
+    }
+
+    .container .form-group.length input {
+        width: 170px;
+    }
+
+    .container .form-group.char input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .container .form-group.char input[type="checkbox"]::before {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .container .form-group.char input[type="checkbox"]:checked::before {
+        font-size: 17px; /* Ukuran simbol */
+        line-height: 25px; /* Mengatur simbol berada di tengah secara vertikal */
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .container .passwordGenerator {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .container .zee {
+        font-size: 15px;
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+
+    .container .password-output {
+        font-size: 12px;
+    }
+    
+    .container .form-group.length {
+        text-align: center;
+    }
+
+    .container .form-group.length input {
+        width: auto;
+        font-size: 15px;
+    }
+
+    .container .form-group label {
+        font-size: 18px !important;
+    }
+
+    .container #generateBtn {
+        font-size: 15px !important;
+        padding: 8px 10px;
+    }
+}
