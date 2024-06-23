@@ -98,7 +98,7 @@ loading.style.visibility = "visible";
 
 setTimeout(() => {
     loading.style.visibility = "hidden";
-}, 1000)
+}, 2000)
 
 // const zee = document.querySelectorAll('.section .zee');
 
