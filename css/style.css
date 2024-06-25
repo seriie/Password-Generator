@@ -44,6 +44,11 @@ body {
     margin-bottom: 20px;
 }
 
+.container .password-output i {
+    float: right;
+    margin-top: -20px;
+}
+
 .container .form-group.form-group.length label {
     font-size: 25px;
     color: #fff;

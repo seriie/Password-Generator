@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/https://fonts.googleapis.com/css?family=Poppins">
     <link rel="icon" href="https://www.shareicon.net/data/2017/02/07/878539_password_512x512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Password Generator | Zee</title>
 </head>
 <div class="myAlerts">
@@ -28,7 +29,10 @@
     <div class="container">
         <h1 class="passwordGenerator" id="password">Password Generator</h1>
         <h2 class="zee">By: Zee</h2>
-        <div class="password-output" id="passwordOutput">Your password will be here</div>
+        <div class="password-output" id="passwordOutput">
+            <div class="text">Your password will be here</div>
+            <i class="fa fa-copy"></i>
+        </div>
         <div class="form-group length">
             <label for="length">Password Length:</label>
             <input type="number" id="length" value="12">

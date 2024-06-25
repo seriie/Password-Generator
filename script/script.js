@@ -1,5 +1,6 @@
 const generateBtn = document.getElementById('generateBtn');
-const passwordOutput = document.getElementById('passwordOutput');
+const passwordOutput = document.querySelector('.password-output .text');
+const passwordArea = document.querySelector('.password-output')
 const lengthInput = document.getElementById('length');
 const uppercaseInput = document.getElementById('uppercase');
 const lowercaseInput = document.getElementById('lowercase');
@@ -43,7 +44,7 @@ function generatePassword(length, uppercase, lowercase, numbers, symbols) {
     return password;
 }
 
-passwordOutput.addEventListener('click', () => {
+passwordArea.addEventListener('click', () => {
     const password = passwordOutput.textContent;
     if (password !== 'Your password will be here') {
         copyToClipboard(password);
@@ -51,31 +52,14 @@ passwordOutput.addEventListener('click', () => {
 });
 
 function copyToClipboard(text) {
-    // Buat elemen textarea untuk menampung teks yang akan disalin
-    let textarea = document.createElement('textarea');
-    textarea.value = text;
-    textarea.style.position = 'fixed';  // Pastikan elemen tidak terlihat
-    document.body.appendChild(textarea);
-
-    // Pilih teks dalam elemen textarea
-    textarea.select();
-    textarea.setSelectionRange(0, textarea.value.length); // Pilih seluruh teks
-
-    try {
-        // Cobalah menyalin teks ke clipboard menggunakan API Clipboard
-        let successful = document.execCommand('copy');
-        if (successful) {
-            myAlerts('Copied to clipboard!');
-        } else {
-            throw new Error('Failed copy to clipboard.');
-        }
-    } catch (err) {
-        console.error('Error:', err);
-        myAlerts('Failed copy to clipboard.Please try again.');
-    } finally {
-        // Hapus elemen textarea yang sudah tidak diperlukan lagi
-        document.body.removeChild(textarea);
-    }
+    navigator.clipboard.writeText(text)
+    .then(() => {
+        myAlerts('Copied to clipboard!');
+    })
+    .catch(err => {
+        console.err('Error:', err);
+        myAlerts('Failed to copy to clipboard. Plase try again!')
+    })
 }
 
 const button = document.querySelector('.alert .btn');
@@ -98,12 +82,4 @@ loading.style.visibility = "visible";
 
 setTimeout(() => {
     loading.style.visibility = "hidden";
-}, 2000)
-
-// const zee = document.querySelectorAll('.section .zee');
-
-// zee.forEach(element => {
-//     element.addEventListener('click', function () {
-//         window.open('https://instagram.com/zzzeeee05', '_blank');
-//     });
-// });
+}, 1500);

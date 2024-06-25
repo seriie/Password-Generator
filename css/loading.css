@@ -8,7 +8,7 @@
     background: linear-gradient(45deg, #153641, rgb(28, 122, 122), #6f18c0);
     background-size: 200% 200%;
     z-index: 100;
-    animation: slide-bg 2s ease;
+    animation: slide-bg 1.5s ease;
 }
 
 .wrapper .zee {

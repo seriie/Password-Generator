@@ -38,6 +38,10 @@
     .container .password-output {
         font-size: 12px;
     }
+
+    .container .password-output i {
+        margin-top: -12px;
+    }
     
     .container .form-group.length {
         text-align: center;
