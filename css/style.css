@@ -49,6 +49,10 @@ body {
     margin-top: -20px;
 }
 
+.container .password-output i.active {
+    display: none;
+}
+
 .container .form-group.form-group.length label {
     font-size: 25px;
     color: #fff;

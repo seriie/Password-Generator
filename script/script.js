@@ -7,6 +7,8 @@ const lowercaseInput = document.getElementById('lowercase');
 const numbersInput = document.getElementById('numbers');
 const symbolsInput = document.getElementById('symbols');
 
+document.querySelector('i').classList.add('active');
+
 generateBtn.addEventListener('click', () => {
     const length = + lengthInput.value;
     const includeUppercase = uppercaseInput.checked;
@@ -26,6 +28,7 @@ generateBtn.addEventListener('click', () => {
         myAlerts("Min password length is 8");
     } else {
         passwordOutput.textContent = password;
+    document.querySelector('i').classList.remove('active');    
     }
 });
 
