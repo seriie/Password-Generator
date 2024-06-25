@@ -16,17 +16,34 @@ body {
     border-radius: 20px;
     max-width: 500px;
     height: auto;
+    overflow: hidden;
     padding: 0 20px;
+    transform: translateY(-600px);
+    transition: 1s ease;
+}
+
+.container.active {
+    transform: translateY(0);
 }
 
 .container .passwordGenerator {
     color: #f0f0f0;
     text-align: center;
+    transition: 1s ease;
+}
+
+.container .passwordGenerator.active {
+    transform: translateY(-100px);
 }
 
 .container .zee {
     color: #cfcfcf;
     text-align: center;
+    transition: 1s ease;
+}
+
+.container .zee.active {
+    transform: translateX(-300px);
 }
 
 .container .password-output {
@@ -42,15 +59,27 @@ body {
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.container .password-output.active, .form-group.length.active, .form-group.char1.active, .form-group.char2.active, .form-group.char3.active, .form-group.char4.active, .generateBtn.active {
+    transform: translateY(-20px);
+    opacity: 0;
 }
 
 .container .password-output i {
     float: right;
     margin-top: -20px;
+    transition: .4s;
 }
 
 .container .password-output i.active {
-    display: none;
+    visibility: hidden;
+    transform: translateX(50px);
+}
+
+.container .password-output, .container .form-group.length, .form-group.char1, .form-group.char2, .form-group.char3, .form-group.char4, .generateBtn {
+    transition: .4s ease;
 }
 
 .container .form-group.form-group.length label {

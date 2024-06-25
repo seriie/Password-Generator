@@ -7,6 +7,54 @@ const lowercaseInput = document.getElementById('lowercase');
 const numbersInput = document.getElementById('numbers');
 const symbolsInput = document.getElementById('symbols');
 
+document.querySelector('.passwordGenerator').classList.add('active');
+document.querySelector('.container .zee').classList.add('active');
+
+setTimeout(() => {
+    document.querySelector('.passwordGenerator').classList.remove('active');
+    document.querySelector('.container .zee').classList.remove('active');
+}, 2100);
+
+setTimeout(() => {
+    document.querySelector('.container').classList.add('active');
+}, 1500);
+
+document.querySelector('.container .password-output').classList.add('active');
+document.querySelector('.form-group.length').classList.add('active');
+document.querySelector('.form-group.char1').classList.add('active');
+document.querySelector('.form-group.char2').classList.add('active');
+document.querySelector('.form-group.char3').classList.add('active');
+document.querySelector('.form-group.char4').classList.add('active');
+document.querySelector('.generateBtn').classList.add('active');
+
+setTimeout(() => {
+    document.querySelector('.container .password-output').classList.remove('active');
+}, 2400);
+
+setTimeout(() => {
+    document.querySelector('.form-group.length').classList.remove('active');
+}, 2500);
+
+setTimeout(() => {
+    document.querySelector('.form-group.char1').classList.remove('active');
+}, 2600);
+
+setTimeout(() => {
+    document.querySelector('.form-group.char2').classList.remove('active');
+}, 2700);
+
+setTimeout(() => {
+    document.querySelector('.form-group.char3').classList.remove('active');
+}, 2800);
+
+setTimeout(() => {
+    document.querySelector('.form-group.char4').classList.remove('active');
+}, 2900);
+
+setTimeout(() => {
+    document.querySelector('.generateBtn').classList.remove('active');
+}, 3000);
+
 document.querySelector('i').classList.add('active');
 
 generateBtn.addEventListener('click', () => {

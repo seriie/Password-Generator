@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     visibility: hidden;
+    z-index: 100;
 }
 
 .myAlerts .alert {
@@ -14,6 +15,7 @@
     visibility: visible;
     border-radius: 10px;
     border: 2px solid #276292;
+    box-shadow: inset 0 0 8px 3px cyan;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     text-align: center;
@@ -33,12 +35,12 @@
 
 .myAlerts .alert .btn {
     float: right;
-    padding: 5px 10px;
-    margin: -35px 10px 0 0;
+    padding: 8px 12px;
+    margin: -35px 15px 0 0;
     cursor: pointer;
     right: 0;
-    color: #70bfff;
+    color: #b0dcff;
     border-radius: 5px;
-    background-color: #327ab6;
+    background-color: #3d97e0;
     box-shadow: 0 0 8px 1px #327ab6;
 }
