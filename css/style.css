@@ -70,6 +70,10 @@ body {
     text-shadow: 0 0 5px #cd98ff;
 }
 
+.container .form-group.length input:focus {
+    outline: 1px solid white;
+}
+
 .container .form-group {
     color: #f0f0f0;
     margin: 3px 0;
@@ -94,7 +98,7 @@ body {
 }
 
 .container .form-group.char input[type="checkbox"]::before {
-    content: ''; /* Tidak ada konten di awal */
+    content: '';
     display: block;
     width: 30px;
     height: 30px;
@@ -109,12 +113,12 @@ body {
 }
 
 .container .form-group.char input[type="checkbox"]:checked::before {
-    content: '\2713'; /* Simbol Unicode untuk centang (✓) */
+    content: '\2713';
     background-color: #6f18c0;
-    color: #ffffff; /* Warna simbol ketika dicentang */
-    font-size: 20px; /* Ukuran simbol */
-    line-height: 30px; /* Mengatur simbol berada di tengah secara vertikal */
-    text-align: center; /* Mengatur simbol berada di tengah secara horizontal */
+    color: #ffffff; 
+    font-size: 20px;
+    line-height: 30px; 
+    text-align: center; 
 }
 
 .container #generateBtn {
