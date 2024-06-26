@@ -19,7 +19,7 @@ body {
     overflow: hidden;
     padding: 0 20px;
     transform: translateY(-600px);
-    transition: 1s ease;
+    transition: .8s ease;
 }
 
 .container.active {
