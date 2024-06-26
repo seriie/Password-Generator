@@ -76,7 +76,8 @@ generateBtn.addEventListener('click', () => {
         myAlerts("Min password length is 8");
     } else {
         passwordOutput.textContent = password;
-    document.querySelector('i').classList.remove('active');    
+        document.querySelector('i').classList.remove('active');
+        passwordArea.style.cursor = "pointer"; 
     }
 });
 
