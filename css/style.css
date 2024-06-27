@@ -81,6 +81,19 @@ body {
     transition: .4s ease;
 }
 
+/* Untuk Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Untuk Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+}
+
 .container .form-group.form-group.length label {
     font-size: 25px;
     color: #fff;
@@ -103,7 +116,7 @@ body {
 }
 
 .container .form-group.length input:focus {
-    outline: 1px solid white;
+    outline: none;
 }
 
 .container .form-group {
