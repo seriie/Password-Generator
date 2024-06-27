@@ -115,6 +115,11 @@ input[type=number] {
     text-shadow: 0 0 5px #cd98ff;
 }
 
+.container .form-group.length input::placeholder {
+    color: #fff;
+    font-weight: bold;
+}
+
 .container .form-group.length input:focus {
     outline: none;
 }

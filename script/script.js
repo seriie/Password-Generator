@@ -7,6 +7,20 @@ const lowercaseInput = document.getElementById('lowercase');
 const numbersInput = document.getElementById('numbers');
 const symbolsInput = document.getElementById('symbols');
 
+let length = lengthInput.value 
+
+// Event listener untuk mengecek panjang kata sandi yang dimasukkan
+lengthInput.addEventListener('input', () => {
+    let length = lengthInput.value;
+    if (length < 8) {
+        myAlerts('Min password length is 8!');
+    } else if (length > 20) {
+        myAlerts('Max password length is 20!');
+    } else {
+        document.querySelector('.alert').classList.remove('active');
+    }
+});
+
 document.querySelector('.passwordGenerator').classList.add('active');
 document.querySelector('.container .zee').classList.add('active');
 
